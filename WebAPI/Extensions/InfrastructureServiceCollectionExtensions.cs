@@ -107,6 +107,7 @@ namespace WebAPI.Extensions
             // Business Services - đặt sau khi đã có HttpContextAccessor
             services.AddScoped<ICurrentUserService, CurrentUserService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<ICartService, CartService>();
             //services.AddScoped<IUserService, UserService>();
 
             // 5. Email + Quartz
